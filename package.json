@@ -27,12 +27,10 @@
     "gatsby-plugin-image": "^3.12.0",
     "gatsby-plugin-manifest": "^5.12.0",
     "gatsby-plugin-mdx": "^5.12.0",
-    "gatsby-plugin-postcss": "^6.12.0",
     "gatsby-plugin-sharp": "^5.12.0",
     "gatsby-plugin-sitemap": "^6.12.0",
     "gatsby-source-filesystem": "^5.12.0",
     "gatsby-transformer-sharp": "^5.12.0",
-    "postcss": "^8.4.30",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -42,6 +40,7 @@
     "@types/react-dom": "^18.2.6",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
+    "autoprefixer": "^10.4.16",
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-standard": "^17.1.0",
@@ -53,8 +52,11 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gatsby-plugin-postcss": "^6.12.0",
     "husky": "^8.0.0",
+    "postcss": "^8.4.31",
     "prettier": "^3.0.3",
+    "tailwindcss": "^3.3.3",
     "typescript": "^5.1.6"
   }
 }
