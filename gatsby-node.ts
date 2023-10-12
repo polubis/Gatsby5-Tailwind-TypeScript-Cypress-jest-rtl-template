@@ -1,5 +1,5 @@
 import { type GatsbyNode } from 'gatsby';
-import { type ArticlesQuery } from './src/api/queries';
+import { type ArticlesQuery } from './src/models/queries';
 import path from 'path';
 
 export const createPages: GatsbyNode['createPages'] = async ({
@@ -17,6 +17,9 @@ export const createPages: GatsbyNode['createPages'] = async ({
           }
           body
           id
+          internal {
+            contentFilePath
+          }
         }
       }
     }
@@ -30,10 +33,14 @@ export const createPages: GatsbyNode['createPages'] = async ({
     throw error;
   }
 
+  const templatePath = `./src/templates/article.template.tsx`;
+
   data.allMdx.nodes.forEach((node) => {
     actions.createPage({
       path: node.frontmatter.slug,
-      component: path.resolve(`./src/templates/article.template.tsx`),
+      component: path.resolve(
+        `${templatePath}?__contentFilePath=${node.internal.contentFilePath}`,
+      ),
       context: node,
     });
   });

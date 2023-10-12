@@ -5,6 +5,9 @@ export interface Article {
   };
   body: string;
   id: string;
+  internal: {
+    contentFilePath: string;
+  };
 }
 
 export interface ArticlesQuery {
