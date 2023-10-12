@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHomeState } from '../../store/home';
+import { useHomeState } from 'store/home';
 
 const HomeView: React.FC = () => {
   const { title } = useHomeState();

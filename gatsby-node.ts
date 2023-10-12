@@ -1,5 +1,5 @@
 import { type GatsbyNode } from 'gatsby';
-import { type ArticlesQuery } from './src/models/queries';
+import { type ArticlesQuery } from 'models/queries';
 import path from 'path';
 
 export const createPages: GatsbyNode['createPages'] = async ({
