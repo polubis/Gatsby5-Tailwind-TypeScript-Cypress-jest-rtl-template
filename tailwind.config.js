@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     `./src/pages/*.{js,jsx,ts,tsx}`,
-    `./src/views/home/*.{js,jsx,ts,tsx}`,
+    `./src/templates/*.{js,jsx,ts,tsx}`,
   ],
   darkMode: `class`,
   theme: {

@@ -22,7 +22,6 @@ const config: GatsbyConfig = {
         anonymize: true,
       },
     },
-    `gatsby-plugin-image`,
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -30,6 +29,7 @@ const config: GatsbyConfig = {
         icon: `src/images/icon.png`,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-plugin-mdx`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -48,6 +48,14 @@ const config: GatsbyConfig = {
         path: `./src/pages/`,
       },
       __key: `pages`,
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `./src/content/`,
+      },
+      __key: `content`,
     },
   ],
 };
