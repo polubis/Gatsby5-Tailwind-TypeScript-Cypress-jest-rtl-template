@@ -110,9 +110,10 @@
       "views/*": ["./src/views/*"],
       "models/*": ["./src/models/*"]
     },
-    "types": ["jest", "node"]
+    "types": ["jest", "node", "cypress"]
   },
   "include": [
+    "./cypress/**/*",
     "./src/**/*",
     "./gatsby-node.ts",
     "./gatsby-config.ts",
