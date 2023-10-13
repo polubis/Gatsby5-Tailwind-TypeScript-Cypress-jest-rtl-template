@@ -25,7 +25,7 @@ const HomePage: React.FC = () => {
       }
     }
   `);
-
+  console.log('sikema');
   useStoreSync(useHomeStore, { is: `ready`, ...site.siteMetadata })();
 
   return (
