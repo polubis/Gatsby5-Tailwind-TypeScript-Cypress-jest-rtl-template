@@ -42,6 +42,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
         `${templatePath}?__contentFilePath=${node.internal.contentFilePath}`,
       ),
       context: node,
+      
     });
   });
 };
