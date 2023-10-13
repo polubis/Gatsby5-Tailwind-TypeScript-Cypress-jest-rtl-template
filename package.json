@@ -22,7 +22,10 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "cy:open": "cypress open --browser chrome --e2e",
-    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open"
+    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
+    "test:ci": "test",
+    "test:e2e:ci": "npm run build && start-server-and-test serve http://localhost:9000 cy:run",
+    "lint:ci": "lint"
   },
   "dependencies": {
     "@mdx-js/react": "^2.3.0",

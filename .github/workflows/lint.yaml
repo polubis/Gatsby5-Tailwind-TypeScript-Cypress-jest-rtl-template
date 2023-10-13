@@ -1,0 +1,17 @@
+name: Units
+on:
+  pull_request:
+    branches: ['main']
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Units
+        run: |
+          npm install --legacy-peer-deps
+          npm run lint:ci
