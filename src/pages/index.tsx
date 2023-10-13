@@ -10,6 +10,7 @@ export interface HomePageProps {
     siteMetadata: {
       title: string;
       siteUrl: string;
+      other: string;
     };
   };
 }
