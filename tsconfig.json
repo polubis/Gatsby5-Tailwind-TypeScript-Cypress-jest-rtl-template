@@ -110,12 +110,17 @@
       "views/*": ["./src/views/*"],
       "models/*": ["./src/models/*"]
     },
-    "types": ["jest", "node"]
+    "types": ["jest", "node", "cypress"]
   },
   "include": [
     "./src/**/*",
     "./gatsby-node.ts",
     "./gatsby-config.ts",
     "./plugins/**/*"
+  ],
+  "exclude": [
+    "cypress/**/*.ts",
+    "cypress.config.ts",
+    "node_modules/cypress*/*.ts"
   ]
 }
