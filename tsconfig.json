@@ -108,8 +108,9 @@
       "development-kit/*": ["./src/development-kit/*"],
       "store/*": ["./src/store/*"],
       "views/*": ["./src/views/*"],
-      "models/*": ["./src/models/*"],
-    }
+      "models/*": ["./src/models/*"]
+    },
+    "types": ["jest", "node"]
   },
   "include": [
     "./src/**/*",

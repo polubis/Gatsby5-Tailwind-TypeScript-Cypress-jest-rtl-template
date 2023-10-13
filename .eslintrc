@@ -10,9 +10,10 @@
   "env": {
     "browser": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
-  "plugins": ["react", "jsx-a11y", "prettier", "@typescript-eslint"],
+  "plugins": ["react", "jsx-a11y", "prettier", "@typescript-eslint", "jest"],
   "extends": [
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
@@ -47,7 +48,9 @@
         "avoidEscape": true
       }
     ],
-    "@typescript-eslint/no-unused-vars": [2, { "argsIgnorePattern": "^_" }]
+    "@typescript-eslint/no-unused-vars": [2, { "argsIgnorePattern": "^_" }],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
   },
   "settings": {
     "import/resolver": {
