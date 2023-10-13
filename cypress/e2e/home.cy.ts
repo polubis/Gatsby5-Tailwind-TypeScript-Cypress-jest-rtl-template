@@ -5,5 +5,6 @@ describe(`Home page works when`, () => {
 
   it(`displays theme content`, () => {
     cy.get(`span:contains('Theme test')`);
+    
   });
 });
